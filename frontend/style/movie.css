@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-image: linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 20vh; */
+}
+header{
+    
+    color:rgb(184, 179, 179);
+    display: flex;
+    height: 130px;
+    padding: 30px;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+#iconbar{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+#iconbar:hover{
+    color: teal;
+}
+.logo{
+margin-left: 60px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.logo img{
+    height: 7vh;
+}
+.logo h3{
+    color:rgb(18, 241, 241);
+    font-size: 25px;
+    margin-top: -35px;
+
+    margin-left: 50px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: rgb(227, 238, 227);
+}
+.nav ul li a:hover{
+    color: teal;
+    font-weight: bolder;
+}
+.user{
+    cursor:pointer;
+    color:teal;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.user a{
+    margin-top: 0px;
+    padding: 10px 30px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.user a:hover{
+    background-color: black;
+    color: teal;
+}
+.user i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.user h4{
+    border-radius: 40px;
+    background: teal;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.user i{
+    padding: 0px 14px;
+}
+.user h4:hover{
+    color:teal;
+    background: black;
+}
+
+/* --------------------------------- */
+.container{
+    height: fit-content;
+    background-color: #474545;
+}
+#search-form {
+    margin: 0px 0px 30px 0px;
+    text-align: center;
+    
+  }
+  #search-input{
+    padding: 10px;
+    width: 32%;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-top: 30px;
+  }
+  #search-form>button{
+    padding: 12px;
+    background-color: rgb(6, 189, 189);
+    border: none;
+    width: 12%;
+    font-size: 22px;
+    color: white;
+    border-radius: 10px;
+  }
+  #search-form>button:hover{
+    background-color: teal;
+  }
+  
+  /* #movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  #movies-container>div{
+    background-color: white ;
+    margin: 20px 10px;
+    width: 20%;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 20px;
+    background-color: rgb(145, 145, 145);
+  }
+  #movies-container>div>img{
+    width: 100%;
+    height: 270px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+  } */
+  #movies-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #474545;
+    color: white;
+  }
+  
+  /* Define how each image div should look */
+  #movies-container div {
+    flex: 20%; 
+    max-width: 20%; 
+    padding: 10px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 18px 0 rgba(66, 221, 245, 1.7); 
+    transition: 0.3s; 
+    position: relative;
+    margin-bottom: 30px;
+    margin: 30px;
+  }
+  
+  /* #movies-container div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+    opacity: 0;
+    transition: opacity .3s;
+  } */
+  
+  /* #movies-container div:hover::before {
+    opacity: 0.5;
+  } */
+  
+  #movies-container div img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    transition: transform .3s;
+  }
+  
+  #movies-container div:hover img {
+    transform: scale(1.1);
+  }
+
+  
+  /* Responsive layout - makes the images stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    #movies-container div {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #movies-container div {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  #movies-container>div>h2,p{
+    margin: 15px;
+    text-align: left;
+  }
+  #movies-container>div>p{
+    font-weight: 600;
+  }
+  #movies-container>div>button{
+    margin: 15px;
+    text-align: left;
+    padding: 7px;
+    background-color: teal;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  #movies-container>div>button:hover{
+    background-color: teal;
+    border-radius: 20px;
+  }
+
+
+
+
+/* --------------------------------------- */
+.footer{
+    position: absolute;
+    margin-top: 320px;
+    height: 20vh;
+    color: white;
+    background:#141414;
+    width: 100%;
+}
+
+.logopart img{
+    height:7vh;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.logopart h1{
+    color:rgb(18, 241, 241);
+font-size: 25px;
+margin-top: 40px;
+margin-left: 120px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.socials i{
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 0px 4px;
+    color: rgb(18, 241, 241);
+}
+.btn4{
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.btn4 a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: black;
+    background: teal;
+    border-radius: 30px;
+}
+
+.scroll{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: teal;
+    border-radius: 50px;
+    bottom: 100px;
+    right: 50px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+}
+.scroll i{
+    color: black;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+.hamburger:focus{
+    outline: none;
+}
+
+@media(max-width:360px)
+{
+    .nav ul{
+        display: none;
+    }
+    .hamburger {
+        display: block; 
+    }
+
+
+}
+
+
+
+/* -------------- */
+
+
+.latest-movies{
+    position: absolute;
+    width:100%;
+    height: fit-content;
+   background-color: black;
+    /* margin-top: 500px; */
+    padding: 20px;
+}
+.latest-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+    
+}
+.latest-container{
+    padding: 10px 0px;
+}
+.latest-container{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.latest-inside img{
+    height: 122px;
+    cursor: pointer;
+    padding: 4px;
+    transition: all 500ms ease-in-out;
+}
+.latest-inside img:hover{
+    transform: scale(1.2);
+}
+.heading1{
+    color: white;
+    line-height: 1.5;
+}
+.heading1 h4{
+    font-size: 15px;
+}
+.heading1 h6{
+    font-size: 12px;
+}
+.btn2{
+    margin-top: -30px;
+    margin-left: 150px;
+}
+.btn2 a{
+    font-size: 13px;
+    text-decoration: none;
+    background: teal;
+    padding: 7px 7px;
+    border-radius: 10%;
+    color: white;
+
+}

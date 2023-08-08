@@ -41,7 +41,7 @@ img{
   height: 100%  
 }
 .left .top_link a {
-    color: #452A5A;
+    color: teal;
     font-weight: 400;
 }
 .left .top_link{
@@ -97,7 +97,7 @@ input:focus {
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
 }
 .submit:hover{
-	background-color: #7f7df5;
+	background-color: rgb(6, 255, 255);
     cursor: pointer;
 	transition: 0.3s ease;
 }
@@ -171,7 +171,7 @@ input:focus {
     box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
 }
 #login:hover{
-	background-color: #7f7df5;
+	background-color: rgb(7, 255, 255);
     cursor: pointer;
 	transition: 0.3s ease;
 }

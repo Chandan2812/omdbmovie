@@ -1,0 +1,76 @@
+
+body{
+    background-color: black;
+}
+h1{
+    color: rgb(4, 251, 251);
+    font-size: 40px;
+    text-align: center;
+}
+/* Add some padding and define a light background color for the images */
+#list-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: #474545;
+    color: white;
+  }
+  
+  /* Define how each image div should look */
+  #list-container div {
+    flex: 20%; 
+    max-width: 20%; 
+    padding: 10px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 18px 0 rgba(66, 221, 245, 1.7); 
+    transition: 0.3s; 
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  #list-container div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffecd2);
+    opacity: 0;
+    transition: opacity .3s;
+  }
+  
+  #list-container div:hover::before {
+    opacity: 0.5;
+  }
+  
+  #list-container div img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    transition: transform .3s;
+  }
+  
+  #list-container div:hover img {
+    transform: scale(1.1);
+  }
+
+  
+  /* Responsive layout - makes the images stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    #list-container div {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #list-container div {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  

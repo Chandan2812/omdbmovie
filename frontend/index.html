@@ -24,9 +24,10 @@
         </button>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Movies</a></li>
-            <li><a href="#">My Playlist</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="playlist.html">Playlists</a></li>
+            <li><a href="myplaylist.html">My Playlist</a></li>
+            <li><a href="about.html">About us</a></li>
         </ul>
     </div>
   
@@ -535,42 +536,7 @@
     <a href=""><i class="fas fa-arrow-up"></i></a>
 </div>
 </body>
-<script>
-     const loginBtn = document.getElementById('login_btn')
-
-     const userName = localStorage.getItem('userName') || null
-    const logedInUserID = localStorage.getItem('logedInUserID') || null
-     
-    if (logedInUserID) {
-        loginBtn.innerHTML = `<span style="color:white;"> ${userName}</span> / Logout`
-    } else {
-        loginBtn.innerHTML == ''
-        loginBtn.innerText == 'Login'
-    }
-
-
-function handleLoginBtn() {
-const loginBtn = document.getElementById('login_btn')
-
-if (loginBtn.innerText == 'Login') {
-
-    location.href = './login.html'
-
-} else {
-
-
-    if (confirm('Do you want to logout?')) {
-        localStorage.removeItem('userName')
-        localStorage.removeItem('signedIn')
-        localStorage.removeItem('logedInUserID')
-        localStorage.removeItem('token')
-
-        location.reload()
-    }
-
-
-}
-
-}
+<script src="./scripts/index.js">
+    
 </script>
 </html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/movie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="images/logo/e.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>ReelQuest</title>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+
+
+    <div class="logo">
+        <img src="images/logo/e.png" alt="">
+        <h3>ReelQuest</h3>
+    </div>
+    <div class="nav" id="small_menu">
+        <button class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movie.html">Movies</a></li>
+            <li><a href="playlist.html">Playlists</a></li>
+            <li><a href="myplaylist.html">My Playlist</a></li>
+            <li><a href="about.html">About us</a></li>
+        </ul>
+    </div>
+  
+    <div class="user">
+        <i class="fas fa-bell"></i>
+        <!-- <i class="fas fa-search"></i> -->
+        <a href="login.html" id="login_btn" onclick="handleLoginBtn()">Login</a>
+     
+    </div>  
+</header>
+<!----------------->
+
+<div class="container">
+    
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search movies..." required>
+        <button type="submit">Search</button>
+    </form>
+    <div id="movies-container"></div>
+   
+
+
+
+
+
+<div class="latest-movies">
+    <h1>TRENDING ON REELQUEST</h1>
+    <div class="latest-container">
+        <div class="latest-inside">
+            <img src="images/horizantal/1.jpg" alt="">
+            <div class="heading1">
+                <h4>Daddy</h4>
+                <p><span>&#9733;&#9733;&#9733;&#9733;&#9734; </span></p>
+                <h6>Action</h6>
+            </div>
+           <div class="btn2">
+               <a href="">Watch Now</a>
+           </div>
+        </div>
+        <div class="latest-inside">
+            <img src="images/horizantal/5.jpg" alt="">
+            <div class="heading1">
+                <h4>Daddy</h4>
+                <p><span>&#9733;&#9733;&#9733;&#9733;&#9734; </span></p>
+                <h6>Action</h6>
+            </div>
+           <div class="btn2">
+               <a href="">Watch Now</a>
+           </div>
+        </div>
+        <div class="latest-inside">
+            <img src="images/horizantal/3.jpg" alt="">
+            <div class="heading1">
+                <h4>Daddy</h4>
+                <p><span>&#9733;&#9733;&#9733;&#9733;&#9734; </span></p>
+                <h6>Action</h6>
+            </div>
+           <div class="btn2">
+               <a href="">Watch Now</a>
+           </div>
+        </div>
+        <div class="latest-inside">
+            <img src="images/horizantal/1.jpg" alt="">
+            <div class="heading1">
+                <h4>Daddy</h4>
+                <p><span>&#9733;&#9733;&#9733;&#9733;&#9734; </span></p>
+                <h6>Action</h6>
+            </div>
+           <div class="btn2">
+               <a href="">Watch Now</a>
+           </div>
+        </div>
+
+        <div class="latest-inside">
+            <img src="images/horizantal/2.jpg" alt="">
+            <div class="heading1">
+                <h4>Daddy</h4>
+                <p><span>&#9733;&#9733;&#9733;&#9733;&#9734; </span></p>
+                <h6>Action</h6>
+            </div>
+           <div class="btn2">
+               <a href="">Watch Now</a>
+           </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<!---Footer-->
+<div class="footer">
+    <div class="inside-footer">
+        <div class="footer-container">
+            <div class="logopart">
+                <h1>ReelQuest</h1>
+                <img src="images/logo/e.png" alt="">
+            </div>
+            <div class="copyright">
+                <p>All Rights Reserved-2023.</p>
+            </div>
+            <div class="socials">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>                    
+            </div>
+            <div class="btn4">
+                <a href="">Subscribe Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+</body>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/movie.js"></script>
+</html>

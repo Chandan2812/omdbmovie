@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-image: linear-gradient( rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* height: 20vh; */
+}
+header{
+    
+    color:rgb(184, 179, 179);
+    display: flex;
+    height: 130px;
+    padding: 30px;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+
+}
+#iconbar{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+#iconbar:hover{
+    color: teal;
+}
+.logo{
+margin-left: 60px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.logo img{
+    height: 7vh;
+}
+.logo h3{
+    color:rgb(18, 241, 241);
+    font-size: 25px;
+    margin-top: -35px;
+
+    margin-left: 50px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: rgb(227, 238, 227);
+}
+.nav ul li a:hover{
+    color: teal;
+    font-weight: bolder;
+}
+.user{
+    cursor:pointer;
+    color:teal;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.user a{
+    margin-top: 0px;
+    padding: 10px 30px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.user a:hover{
+    background-color: black;
+    color: teal;
+}
+.user i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.user h4{
+    border-radius: 40px;
+    background: teal;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+.user i{
+    padding: 0px 14px;
+}
+.user h4:hover{
+    color:teal;
+    background: black;
+}
+
+/* --------------------------------- */
+#playlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #474545;
+  }
+  #playlist-container>div{
+    background-image: url("../images/logo/movie.png");
+    background-size: cover;
+    width: 22%;
+    height: 50vh;
+    margin: 30px auto;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(66, 221, 245, 1.7);
+  }
+  
+ 
+  #playlist-container>div>h2{
+    margin: 15px;
+    text-align: left;
+  }
+
+
+/* --------------------------------------- */
+.footer{
+    position: absolute;
+    margin-top: 0px;
+    height: 20vh;
+    color: white;
+    background:#141414;
+    width: 100%;
+}
+
+.logopart img{
+    height:7vh;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.logopart h1{
+    color:rgb(18, 241, 241);
+font-size: 25px;
+margin-top: 40px;
+margin-left: 120px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copyright{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.socials i{
+    font-size: 27px;
+    margin-top: 30px;
+    padding: 0px 4px;
+    color: rgb(18, 241, 241);
+}
+.btn4{
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.btn4 a{
+    text-decoration: none;
+    padding: 10px 25px;
+    color: black;
+    background: teal;
+    border-radius: 30px;
+}
+
+.scroll{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: teal;
+    border-radius: 50px;
+    bottom: 100px;
+    right: 50px;
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+}
+.scroll i{
+    color: black;
+}
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+}
+.hamburger:focus{
+    outline: none;
+}
+
+@media(max-width:360px)
+{
+    .nav ul{
+        display: none;
+    }
+    .hamburger {
+        display: block; 
+    }
+
+
+}
