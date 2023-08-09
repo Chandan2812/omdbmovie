@@ -104,14 +104,19 @@ playlistRouter.delete('/delete/:id', async (req, res) => {
 
 
 
-// playlistRouter.get("/filter",async (req,res)=>{
-//   try {
-//     const {public}=req.query
-//     const playlist=await PlaylistModel.find({public:public})
-//     res.send({message:"filtered successfully", playlist:playlist})
-//   } catch (error) {
-//     res.status(500).json({ error: 'Something went wrong' });
-//   }
-// })
+playlistRouter.get("/filter/:userID",async (req,res)=>{
+ try {
+  const {public}=req.query
+  const data = await PlaylistModel.find({userId:req.params.userID,public:public});
+  //   console.log(data);
+    res.send({
+        message:"Your Playlist",
+        data : data
+    });
+  } catch (err) {
+    console.log("err");
+    console.log({ message: "Something went wrong", err:err.message });
+  }
+})
 
 module.exports={playlistRouter}
