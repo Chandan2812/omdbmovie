@@ -1,4 +1,4 @@
-const url = "http://localhost:8000";
+const url = "https://movie-playlist.onrender.com";
 
 // login script is  start hare
 let login = document.getElementById("login-form");

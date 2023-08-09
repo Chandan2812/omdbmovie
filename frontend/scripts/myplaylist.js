@@ -1,4 +1,4 @@
-const url = `http://localhost:8000`
+const url = `https://movie-playlist.onrender.com`
 
 const userID = localStorage.getItem('logedInUserID') || null
 if (!userID) {
@@ -20,20 +20,6 @@ const getData = () => {
             const allPlaylist=data.data
             // console.log(allPlaylist)
             displayPlaylist(allPlaylist)
-            // const select=document.querySelector("select")
-            // select.addEventListener("change",()=>{
-            //   filterPlaylists(allPlaylist)
-            //   function filterPlaylists(allPlaylist) {
-            //     const filter = document.getElementById("filterDropdown").value;
-            //     console.log(filter)
-            //     const filteredPlaylists = allPlaylist.filter(playlist => {
-            //         if (filter === "all") return true;
-            //         return filter === "public" ? playlist.public : !playlist.public;
-            //     });
-            
-            //     displayPlaylist(filteredPlaylists);
-            // }
-            // })
             
             
         })

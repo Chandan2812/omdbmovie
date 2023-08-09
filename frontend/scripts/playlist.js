@@ -1,4 +1,4 @@
-const url = `http://localhost:8000`
+const url = `https://movie-playlist.onrender.com`
 
 const userID = localStorage.getItem('logedInUserID') || null
 if (!userID) {

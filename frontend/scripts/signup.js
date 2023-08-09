@@ -1,4 +1,4 @@
-const url = "http://localhost:8000";
+const url = "https://movie-playlist.onrender.com";
 
 let signbtn = document.getElementById("btn");
 signbtn.addEventListener("click", (e) => {
