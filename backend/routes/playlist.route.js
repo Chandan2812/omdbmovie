@@ -104,4 +104,14 @@ playlistRouter.delete('/delete/:id', async (req, res) => {
 
 
 
+// playlistRouter.get("/filter",async (req,res)=>{
+//   try {
+//     const {public}=req.query
+//     const playlist=await PlaylistModel.find({public:public})
+//     res.send({message:"filtered successfully", playlist:playlist})
+//   } catch (error) {
+//     res.status(500).json({ error: 'Something went wrong' });
+//   }
+// })
+
 module.exports={playlistRouter}
