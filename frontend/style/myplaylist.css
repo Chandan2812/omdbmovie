@@ -200,7 +200,7 @@ select {
 
   #playlist-container>div>button{
     text-align: left;
-    padding: 10px;
+    padding: 8px;
     background-color: teal;
     font-size: 15px;
     border: none;
@@ -209,7 +209,7 @@ select {
   }
   #playlist-container>div>.del{
     background-color: red;
-    margin-left: 60px;
+    /* margin-left: 50px; */
   }
 
   #playlist-container>div>button:hover{
