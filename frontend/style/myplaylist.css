@@ -209,7 +209,7 @@ select {
   }
   #playlist-container>div>.del{
     background-color: red;
-    margin-left: 75px;
+    margin-left: 60px;
   }
 
   #playlist-container>div>button:hover{
