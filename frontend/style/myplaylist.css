@@ -107,6 +107,34 @@ margin-bottom: 10px;
 }
 
 /* --------------------------------- */
+    #filter{
+        background-color: #474545;
+    }
+    #filterDropdown{
+        margin-top: 30px;
+        margin-left: 75%;
+        height: 40px;
+        width: 20%;
+    }
+    /* Basic dropdown styling */
+select {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px 12px 10px 15px; 
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+    background-color: #ffffff; 
+    background-image: linear-gradient(to top, #f2f2f2, #ffffff);
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+
+
+
 
   #playlist-container {
     /* margin-top: 40px; */
@@ -119,6 +147,7 @@ margin-bottom: 10px;
   }
   
   /* Define how each image div should look */
+ 
   #playlist-container div {
     flex: 20%; 
     max-width: 20%; 

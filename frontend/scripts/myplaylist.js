@@ -16,14 +16,33 @@ const getData = () => {
     })
         .then((res) => res.json())
         .then((data) => {
-            console.log(data.data)
-            displayPlaylist(data.data)
+            
+            const allPlaylist=data.data
+            // console.log(allPlaylist)
+            displayPlaylist(allPlaylist)
+            // const select=document.querySelector("select")
+            // select.addEventListener("change",()=>{
+            //   filterPlaylists(allPlaylist)
+            //   function filterPlaylists(allPlaylist) {
+            //     const filter = document.getElementById("filterDropdown").value;
+            //     console.log(filter)
+            //     const filteredPlaylists = allPlaylist.filter(playlist => {
+            //         if (filter === "all") return true;
+            //         return filter === "public" ? playlist.public : !playlist.public;
+            //     });
+            
+            //     displayPlaylist(filteredPlaylists);
+            // }
+            // })
+            
+            
         })
         .catch(err => console.log(err))
 }
 window.addEventListener("load",()=>{
     getData();
 })
+
 
 
 function displayPlaylist(movies) {
@@ -61,7 +80,7 @@ function displayPlaylist(movies) {
         })
         .then(res =>res.json())
         .then(data=>{
-        //   console.log(data.playlist.public)
+          console.log(data.playlist)
           if(data.playlist.public)
           {
             button.innerText="Add to Private"
@@ -94,7 +113,21 @@ function displayPlaylist(movies) {
   }
   
   
-    
+// const select=document.querySelector("select")
+//   select.addEventListener("change",()=>{
+//     var public = document.querySelector('select').value;
+//     // console.log(public)
+//     fetch(`${url}/playlist/filter?public=${public}`,{
+//             headers:{
+//                 "content-type":"application/json"
+//             }
+//         }).then(res=>res.json())
+//         .then(data=>{
+//             console.log(data)
+//             displayPlaylist(data.playlist)
+//         })
+//         .catch(err=>console.log(err))
+//   })
 
  
 
