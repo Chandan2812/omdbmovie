@@ -113,21 +113,25 @@ function displayPlaylist(movies) {
   }
   
   
-// const select=document.querySelector("select")
-//   select.addEventListener("change",()=>{
-//     var public = document.querySelector('select').value;
-//     // console.log(public)
-//     fetch(`${url}/playlist/filter?public=${public}`,{
-//             headers:{
-//                 "content-type":"application/json"
-//             }
-//         }).then(res=>res.json())
-//         .then(data=>{
-//             console.log(data)
-//             displayPlaylist(data.playlist)
-//         })
-//         .catch(err=>console.log(err))
-//   })
+const select=document.querySelector("select")
+  select.addEventListener("change",()=>{
+    var public = document.querySelector('select').value;
+    // console.log(public)
+    if(public==="all"){
+      location.reload()
+    }
+    fetch(`${url}/playlist/filter/${userID}?public=${public}`,{
+            headers:{
+                "content-type":"application/json"
+            }
+        }).then(res=>res.json())
+        .then(data=>{
+            console.log(data.data)
+            displayPlaylist(data.data)
+
+        })
+        .catch(err=>console.log(err))
+  })
 
  
 
