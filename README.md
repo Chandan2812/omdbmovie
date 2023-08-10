@@ -34,9 +34,7 @@ Discover and curate personalized movie playlists using the vast collection avail
 ## Getting Started
 
 1. **Setup the Backend**
-   
-   - Clone the repository: `git clone [your-repo-link]`
-   - Navigate to the directory: `cd omdbmovie`
+
    - Install dependencies: `npm install`
    - Start the server: `npm run server`
 
